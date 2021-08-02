@@ -1,0 +1,415 @@
+/*リセットcss*/
+
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, address, code, em, img, q, strong, dl, dt, dd, ol, ul, li, form, label, fieldset, legend, table, caption, tbody, tfoot, thead, tr, th, td, button {
+    padding: 0;
+    margin: 0;
+    font-style: normal;
+    font-weight: normal;
+    outline: 0;
+    border: none;
+    background: none;
+  }
+
+
+body{
+  font-family: sans-serif;
+}
+
+a{
+  text-decoration: none;
+  color: #9da66c;
+}
+
+a:hover{
+  color: #5d623f;
+}
+
+/* サイドバー*/
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  color: #007042;
+  background-color: #fff;
+  height: 100%;
+  z-index: 999;
+  width: 120px
+  font-size: 100%;
+
+}
+
+.sidebar img{
+  width: 100px;
+  padding: 20px;
+}
+
+.sidebar li{
+  list-style-type: none;
+  margin-bottom: 20px;
+  padding: 20px 0 0 20px;
+
+
+}
+
+li.english{
+  position: absolute;
+  bottom: 43px;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+li.language{
+  position: absolute;
+  bottom: 0px;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+
+/* メインコンテンツ */
+main{
+  margin-left: 120px;
+
+}
+
+/* トップコンテンツ */
+.top-contents{
+  background-image: url("../img/bg_sec1.png");
+  position: relative;
+  height: 1079px;
+  font-family: "小塚ゴシック Pr6N";
+}
+
+.catch-copy_container{
+  padding: 3% 0 0 24%;
+}
+
+.catch-copy{
+  padding-left: 25%;
+  position: relative;
+  z-index: 
+
+}
+
+.catch-copy h2{
+  color: #aa9ac3;
+  font-weight: bold;
+  line-height: 60px;
+}
+
+.catch-copy p{
+  color: #201236;
+  line-height: 20px;
+}
+
+.menu-container{
+  overflow: hidden;
+  position: absolute;
+  top: 255px;
+}
+
+.menu-contents{
+  float: left;
+  line-height: 23px;
+}
+
+.menu-contents h3{
+  padding-bottom: 23px;
+}
+
+.menu-contents span{
+  font-size: 13px;
+}
+
+.menu-contents p{
+  padding-bottom: 23px;
+}
+
+.cocoa-frappuccino{
+  position: absolute;
+  top: 490px;
+  left: 38px;
+}
+
+.crumble-cocoa{
+  position: absolute;
+  top: 574px;
+  left: 482px;
+}
+
+.chocolatey-crumble{
+  position: absolute;
+  top: 609px;
+  left: 949px;
+}
+
+.chocolatey-frappuccino{
+  position: absolute;
+  bottom: 26px;
+  right: 50px;
+  text-align: right;
+}
+
+/* セカンドコンテンツ */
+
+.mocha-cocoa{
+  background-image: url("../img/bg_sec2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 1000px;
+}
+
+.mocha-contents{
+  padding: 137px 0 0 146px;
+  position: relative;
+  z-index: 1;
+}
+
+.mocha-catchcopy{
+  margin-bottom: 42px;
+}
+
+.mocha-catchcopy h2{
+  font-size: 28px;
+  font-weight: bold;
+  padding: 43px 0 20px 0;
+  color: #aa9ac3;
+
+}
+
+.mocha-catchcopy p{
+  font-size: 16px;
+  color: #6c6877;
+}
+
+.new-fav{
+  position: relative;
+}
+
+.newchocosauce{
+  overflow: hidden;
+  margin-bottom: 29px;
+}
+
+.newchocosauce img{
+  float: left;
+  padding-right: 19px;
+}
+
+.newchocosauce p{
+  color: #b0a1c7;
+  font-size: 22px;
+  padding: 10px 0 0 0;
+}
+
+.discover-fav{
+  overflow: hidden;
+  border: 2px #9d9d9e solid;
+  width: 490px;
+  padding: 15px 32px;
+}
+
+.discover-fav p{
+  float: left;
+}
+
+.your-fav{
+  text-align: center;
+  font-weight: bold;
+  font-size: 14px;
+  font-family: "小塚ゴシック Pr6N";
+  line-height: 20px;
+  letter-spacing: -1px;
+}
+
+.discover-fav span{
+  font-size: 24px;
+  font-weight: bold;
+  }
+
+.fav-find{
+  padding-left: 19px;
+}
+
+.fav-find a{
+  color: #8c869c;
+}
+
+.fav-find a:hover{
+  color: #504c5a;
+}
+
+.discover-fav img{
+  position: absolute;
+  right: 1125px;
+  bottom: 0px;
+}
+
+.mocha-menu{
+  position: absolute;
+  top: 200px;
+  right: 0;
+  z-index: 0;
+}
+
+.mocha-menu-contents{
+  text-align: center;
+  color: #4e4537;
+  font-family: "小塚ゴシック Pr6N";
+  line-height: 37px;
+}
+
+.mocha-menu-contents h3{
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.cocoa{
+  position: absolute;
+  bottom: 60px;
+  right: 743px;
+}
+
+.c-mocha{
+  position: absolute;
+  bottom: 140px;
+  right: 405px;
+}
+
+.w-mocha{
+  position: absolute;
+  bottom: 30px;
+  right: 129px;
+}
+
+/* サードコンテンツ */
+
+.gift-container{
+  background-image: url("../img/bg_sec3.png");
+  background-size: cover;
+  height: 700px;
+}
+
+.left-designation{
+  float: left;
+}
+
+.coffee-image{
+  position: relative;
+  left: 46px;
+  bottom: -150px;
+}
+
+.coffee-image a{
+  position: absolute;
+  right: 70px;
+  bottom: 100px;
+  font-size: 46px;
+  font-family: "小塚ゴシック Pr6N";
+  text-decoration: none;
+  font-weight: bold;
+  color: #43f5fc;
+}
+
+.coffee-image a:hover{
+  color: #63a1a3;
+}
+
+.gift-contents{
+  padding: 250px 0 0 250px;
+  font-family: "小塚ゴシック Pr6N";
+  color: #85838f;
+}
+
+.gift-contents h2{
+  font-size: 30px;
+  font-weight: bold;
+
+}
+
+.gift-contents p{
+  font-size: 13px;
+  line-height: 34px;
+}
+
+.gift-contents a{
+  font-size: 13px;
+  line-height: 90px;
+  text-decoration: none;
+  color: #85838f;
+}
+
+.gift-contents a:hover{
+  color: #57555d;
+}
+
+.gift-image{
+  padding: 230px 0 0 50px;
+}
+
+/* フッター */
+footer{
+  background-color: #f3f1ef;
+  margin-left: 140px;
+  position: relative;
+  z-index: 5;
+  height: 200px;
+}
+
+.navi{
+  padding: 30px;
+  color: #958677;
+}
+
+.navi a{
+  color: #958677;
+}
+
+.navi a:hover{
+  color: #685d53;
+}
+
+.navi p{
+  padding-left: 20px;
+}
+
+.sns-info{
+  overflow: hidden;
+}
+
+.sns-info li{
+  float: left;
+  list-style-type: none;
+  padding: 0 20px;
+}
+
+.left-bd{
+  border-left: 1px #958677 solid;
+}
+
+.info{
+  overflow: hidden;
+}
+
+.info li{
+  float: left;
+  list-style-type: none;
+  padding: 0 20px;
+  margin: 20px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*   ここまで    */
