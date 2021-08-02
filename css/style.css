@@ -101,7 +101,7 @@ li{
 	.bg-sec1{
     background: url("https://github.com/noruneko4487/coffeeshop/blob/main/img/bg_sec1.png?raw=true") no-repeat;
     background-size: contain;
-    height: 70vw;
+    height: 64vw;
   
 }
   
@@ -287,13 +287,16 @@ li{
 /* モカココアコンテンツ　 */
 
 @media screen and (min-width: 768px) {
+  
+  
   .grid-mocha{
     display: grid;
-    grid-template-rows: auto auto;
-    grid-template-columns: 40vw 55vw;
+    grid-template-rows: 19vw auto;
+    grid-template-columns: 40vw auto;
     grid-template-areas: 
       "catchimage drinkimage"
       "mochacontent drinkimage";
+    
   }
   
   .mocha-catchcopy{
@@ -308,7 +311,7 @@ li{
     grid-area: mochacontent;
   }
   
-  
+
   
   
   .bg-sec2{
@@ -329,9 +332,9 @@ li{
   
   
   .mocha-catchcopy img{
-  width: 40vw;
-  padding: 0;
+  width: 35vw;
   margin: 0;
+  padding-left: 2vw;
 }
   
   
@@ -367,22 +370,22 @@ li{
   .mocha-menu{
   position: relative;
   text-align: center;
-}
+  }
 
 .cocoa{
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 36vw;
+  left: -11vw;
 }
 .c-mocha{
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 31.2vw;
+  left: 27vw;
 }
 .w-mocha{
   position: absolute;
-  bottom: 0;
-  right: 0;
+  bottom: 4vw;
+  right: 7vw;
 }
 }
 
@@ -403,9 +406,7 @@ li{
 }
 
 @media screen and (min-width: 768px) {
-  .drink-contents{
-  color: #4e4537;
-}
+  
 
 .drink-contents h3{
   font-size: 2vw;
@@ -460,13 +461,15 @@ li{
 }
 
 @media screen and (min-width: 768px) {
+  
+  
   .mocha-catchcopy h1{
   color: #aa9ac3;
-  font-size: 1.6vw;
+  font-size: 1.4vw;
   font-weight: bold;
   line-height: 1.6;
   box-sizing: border-box;
-  margin-bottom: 2vw;
+  margin-bottom: 1vw;
 }
 
 .mocha-catchcopy p{
@@ -476,22 +479,22 @@ li{
 }
 
 .newchocosauce p{
-  font-size: 1vw;
+  font-size: 1.3vw;
   color: #b0a1c7;
   line-height: 1.7;
 }
 
 .discover-fav h3{
-  font-size: 1vw;
+  font-size: 0.7vw;
   line-height: 1.3;
 }
 
 .discover-fav span{
-  font-size: 2vw;
+  font-size: 1.3vw;
 }
 
 .discover-fav p{
-  font-size: 1vw;
+  font-size: 0.8vw;
   line-height: 1.7;
   padding-left: 2vw;
   
@@ -502,6 +505,8 @@ li{
 }
 
 /* コンテンツ部分 */
+
+
 
 .mocha-catchcopy{
   margin: 5vw 2vw;
@@ -536,8 +541,13 @@ li{
 }
 
 @media screen and (min-width: 768px) {
+  .mocha-contents{
+    width: 40vw;
+    margin-left: 2vw;
+  }
+  
   .mocha-catchcopy{
-  margin: 0;
+  margin-bottom: 2vw;
 }
   
   .choco-para{
@@ -546,8 +556,10 @@ li{
   
   .newchocosauce{
   display: flex;
-  margin: 0;
+  margin-bottom: 2vw;
   align-items: center;
+  justify-content: space-between;
+  width: 25vw;
 }
 
 .newchocosauce img{
@@ -555,20 +567,21 @@ li{
 }
   
   .discover-fav{
-  width: 20vw;
-  display: block;
+  width: 27vw;
+  display: flex;
+  align-items: center;
   border: 2px #9d9d9e solid;
-  margin: 0;
-  padding: 0;
+  margin: 0 0 0 7vw;
+  padding: 0.5vw 1vw;
   position: relative;
 }
 
 
 .discover-fav img{
-  width: 5vw;
+  width: 4vw;
   position: absolute;
   bottom: 0vw;
-  right: 1vw;
+  right: 0.5vw;
 }
   
   
