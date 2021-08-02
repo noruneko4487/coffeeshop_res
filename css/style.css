@@ -1,5 +1,6 @@
-/*リセットcss*/
+@charset "utf-8";
 
+/* リセットcss */
 html, body, div, span, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, address, code, em, img, q, strong, dl, dt, dd, ol, ul, li, form, label, fieldset, legend, table, caption, tbody, tfoot, thead, tr, th, td, button {
     padding: 0;
     margin: 0;
@@ -10,393 +11,661 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, address, c
     background: none;
   }
 
-
+/* 全体css */
 body{
-  font-family: sans-serif;
+  font-family: "小塚ゴシック Pr6N";
+  
 }
 
 a{
   text-decoration: none;
-  color: #9da66c;
 }
 
-a:hover{
-  color: #5d623f;
+img{
+  width: 100%;
 }
 
-/* サイドバー*/
-header{
-  position: fixed;
-  top: 0;
-  left: 0;
-  color: #007042;
-  background-color: #fff;
-  height: 100%;
-  z-index: 999;
-  width: 120px
-  font-size: 100%;
-
-}
-
-.sidebar img{
-  width: 100px;
-  padding: 20px;
-}
-
-.sidebar li{
+li{
   list-style-type: none;
-  margin-bottom: 20px;
-  padding: 20px 0 0 20px;
-
-
-}
-
-li.english{
-  position: absolute;
-  bottom: 43px;
-  font-size: 10px;
-  font-weight: bold;
-}
-
-li.language{
-  position: absolute;
-  bottom: 0px;
-  font-size: 10px;
-  font-weight: bold;
 }
 
 
-/* メインコンテンツ */
-main{
-  margin-left: 120px;
 
+/*.clearfix::after{
+  content: "";
+  display: block;
+  clear: both;
+}*/
+
+
+
+.choco-mocha{
+  background: url("https://github.com/noruneko4487/coffeeshop/blob/main/img/bg_sp.png?raw=true") no-repeat;
+  background-size: cover;
 }
+
+.pc-image{
+  display: none;
+}
+  
+  
+@media screen and (min-width: 768px) {
+  .sp-image{
+    display: none;
+  }
+  
+  .pc-image{
+    display: inline;
+    
+  }
+  
+  .choco-mocha{
+  background: none;
+}
+}
+
+
 
 /* トップコンテンツ */
-.top-contents{
-  background-image: url("../img/bg_sec1.png");
-  position: relative;
-  height: 1079px;
-  font-family: "小塚ゴシック Pr6N";
-}
 
-.catch-copy_container{
-  padding: 3% 0 0 24%;
-}
+
 
 .catch-copy{
-  padding-left: 25%;
-  position: relative;
-  z-index: 
-
+  width: 92%;
+  margin: 0 auto;
 }
 
-.catch-copy h2{
-  color: #aa9ac3;
+.catchcopy-container img{
+  width: 91%;
+  margin: 3%;
+}
+
+
+
+.catch-copy h1{
+  font-size: 19px;
   font-weight: bold;
-  line-height: 60px;
+  color: #aa9ac3;
 }
 
 .catch-copy p{
+  font-size: 10.7px;
   color: #201236;
-  line-height: 20px;
+  line-height: 17px;
 }
 
+/* トップコンテンツ PC版 */
+
+@media screen and (min-width: 768px) {
+
+	.bg-sec1{
+    background: url("https://github.com/noruneko4487/coffeeshop/blob/main/img/bg_sec1.png?raw=true") no-repeat;
+    background-size: contain;
+    height: 70vw;
+  
+}
+  
+  
+  
+  .catchcopy-container{
+    position: relative;
+    top: 2vw;
+    left: 27vw;
+    
+  }
+  
+  .catchcopy-container img{
+    width: 40vw;
+    margin: 0;
+  }
+  
+  .catch-copy{
+    width: 23vw;
+    text-align: right;
+    margin: 0;
+    position: absolute;
+    left: 17vw;
+    z-index: 2;
+    min-width: 344px;
+  }
+  
+  .catch-copy h1{
+    font-size: 1.3vw;
+  }
+  
+  .catch-copy p{
+    font-size: 0.6vw;
+    line-height: 27px;
+    
+  }
+  
+  
+}
+
+/* トップコンテンツメニュー部分 */
+
 .menu-container{
-  overflow: hidden;
-  position: absolute;
-  top: 255px;
+  position: relative;
 }
 
 .menu-contents{
-  float: left;
-  line-height: 23px;
+  text-align: right;
+  width: 90%;
+  margin-left: 5%;
 }
 
-.menu-contents h3{
-  padding-bottom: 23px;
+.bc-deco{
+  font-size: 10px;
+  line-height: 21px;
 }
 
-.menu-contents span{
-  font-size: 13px;
-}
-
-.menu-contents p{
-  padding-bottom: 23px;
+.bottom-adjustment{
+  padding-bottom: 2px;
 }
 
 .cocoa-frappuccino{
   position: absolute;
-  top: 490px;
-  left: 38px;
+  top: 18.5%;
 }
+
 
 .crumble-cocoa{
   position: absolute;
-  top: 574px;
-  left: 482px;
+  top: 37%;
+  
 }
+
 
 .chocolatey-crumble{
   position: absolute;
-  top: 609px;
-  left: 949px;
+  top: 60%;
+  
 }
+
 
 .chocolatey-frappuccino{
   position: absolute;
-  bottom: 26px;
-  right: 50px;
-  text-align: right;
+  top: 91%;
+  
 }
 
-/* セカンドコンテンツ */
-
-.mocha-cocoa{
-  background-image: url("../img/bg_sec2.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  height: 1000px;
+.menu-contents h2{
+  font-size: 12px;
+  line-height: 16px;
 }
 
-.mocha-contents{
-  padding: 137px 0 0 146px;
-  position: relative;
-  z-index: 1;
+
+
+.menu-contents p{
+  font-size: 10px;
+  line-height: 18px;
 }
 
-.mocha-catchcopy{
-  margin-bottom: 42px;
+
+
+
+
+
+/* トップコンテンツメニュー部分 PC版 */
+
+@media screen and (min-width: 768px) {
+  .menu-container{
+    height: 700px;
+  }
+  
+  .choco-drink{
+    position: absolute;
+    top: -1vw;
+  }
+  
+  .menu-contents{
+    text-align: left;
+    width: 20%;
+    margin-left: 0;
+  }
+  
+  
+  
+  .cocoa-frappuccino{
+    position: absolute;
+    top: 26vw;
+    left: 3vw;
+  }
+  
+  .crumble-cocoa{
+    position: absolute;
+    top: 32vw;
+    left: 26vw;
+  }
+  
+  .chocolatey-crumble{
+    position: absolute;
+    top: 33vw;
+    right: 25vw;
+  }
+  
+  .chocolatey-frappuccino{
+    position: absolute;
+    top: 30vw;
+    right: 1vw;
+    text-align: right;
+  }
+  
+  /* フォント調整 */
+  
+  .new-line{
+    display: block;
+    font-weight: 500;
+    
+  }
+  
+  .pc-newline{
+    display: none;
+  }
+  
+  .bottom-adjustment{
+    margin-bottom: 1vw;
+  }
+  
+  .menu-contents h2{
+    font-size: 1.3vw;
+    line-height: 1.2;
+    font-weight: 500;
+    margin-bottom: 1vw;
+  }
+  
+  .menu-contents p{
+    font-size: 1vw;
+    line-height: 1.6;
+  }
+  
+  
+  
+  
 }
 
-.mocha-catchcopy h2{
-  font-size: 28px;
-  font-weight: bold;
-  padding: 43px 0 20px 0;
-  color: #aa9ac3;
+/* モカココアコンテンツ　 */
 
-}
-
-.mocha-catchcopy p{
-  font-size: 16px;
-  color: #6c6877;
-}
-
-.new-fav{
-  position: relative;
-}
-
-.newchocosauce{
-  overflow: hidden;
-  margin-bottom: 29px;
-}
-
-.newchocosauce img{
-  float: left;
-  padding-right: 19px;
-}
-
-.newchocosauce p{
-  color: #b0a1c7;
-  font-size: 22px;
-  padding: 10px 0 0 0;
-}
-
-.discover-fav{
-  overflow: hidden;
-  border: 2px #9d9d9e solid;
-  width: 490px;
-  padding: 15px 32px;
-}
-
-.discover-fav p{
-  float: left;
-}
-
-.your-fav{
-  text-align: center;
-  font-weight: bold;
-  font-size: 14px;
-  font-family: "小塚ゴシック Pr6N";
-  line-height: 20px;
-  letter-spacing: -1px;
-}
-
-.discover-fav span{
-  font-size: 24px;
-  font-weight: bold;
+@media screen and (min-width: 768px) {
+  .grid-mocha{
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 40vw 55vw;
+    grid-template-areas: 
+      "catchimage drinkimage"
+      "mochacontent drinkimage";
+  }
+  
+  .mocha-catchcopy{
+    grid-area: catchimage;
+  }
+  
+  .mocha-menu{
+    grid-area: drinkimage;
+  }
+  
+  .mocha-contents{
+    grid-area: mochacontent;
+  }
+  
+  
+  
+  
+  .bg-sec2{
+    background: url("https://github.com/noruneko4487/coffeeshop/blob/main/img/bg_sec2.png?raw=true") no-repeat;
+    background-size: contain;
   }
 
-.fav-find{
-  padding-left: 19px;
 }
 
-.fav-find a{
-  color: #8c869c;
+/* キャッチコピー部分 */
+
+.mocha-catchcopy img{
+  width: 90vw;
+  margin: 3vw;
 }
 
-.fav-find a:hover{
-  color: #504c5a;
+@media screen and (min-width: 768px) {
+  
+  
+  .mocha-catchcopy img{
+  width: 40vw;
+  padding: 0;
+  margin: 0;
+}
+  
+  
+  
 }
 
-.discover-fav img{
-  position: absolute;
-  right: 1125px;
-  bottom: 0px;
-}
 
+/* メニュー部分 */
 .mocha-menu{
-  position: absolute;
-  top: 200px;
-  right: 0;
-  z-index: 0;
-}
-
-.mocha-menu-contents{
+  position: relative;
   text-align: center;
-  color: #4e4537;
-  font-family: "小塚ゴシック Pr6N";
-  line-height: 37px;
-}
-
-.mocha-menu-contents h3{
-  font-weight: bold;
-  font-size: 30px;
 }
 
 .cocoa{
   position: absolute;
-  bottom: 60px;
-  right: 743px;
+  top: 23vw;
+  right: 15vw;
 }
-
 .c-mocha{
   position: absolute;
-  bottom: 140px;
-  right: 405px;
+  top: 85vw;
+  left: 10vw;
 }
-
 .w-mocha{
   position: absolute;
-  bottom: 30px;
-  right: 129px;
+  bottom: 30vw;
+  right: 7vw;
 }
 
-/* サードコンテンツ */
-
-.gift-container{
-  background-image: url("../img/bg_sec3.png");
-  background-size: cover;
-  height: 700px;
-}
-
-.left-designation{
-  float: left;
-}
-
-.coffee-image{
+@media screen and (min-width: 768px) {
+  
+  
+  .mocha-menu{
   position: relative;
-  left: 46px;
-  bottom: -150px;
+  text-align: center;
 }
+
+.cocoa{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.c-mocha{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.w-mocha{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+}
+
+
+/* メニュー部分　フォント関連 */
+
+.drink-contents{
+  color: #4e4537;
+}
+
+.drink-contents h3{
+  font-size: 7vw;
+  line-height: 1.2;
+}
+
+.drink-contents p{
+  font-size: 4.5vw;
+}
+
+@media screen and (min-width: 768px) {
+  .drink-contents{
+  color: #4e4537;
+}
+
+.drink-contents h3{
+  font-size: 2vw;
+  line-height: 1.2;
+}
+
+.drink-contents p{
+  font-size: 1vw;
+}
+
+
+}
+
+
+/* コンテンツ部分　フォント関連 */
+.mocha-catchcopy h1{
+  color: #aa9ac3;
+  font-size: 4.3vw;
+  font-weight: bold;
+  line-height: 1.6;
+  box-sizing: border-box;
+  margin-bottom: 2vw;
+}
+
+.mocha-catchcopy p{
+  color: #6c6877;
+  font-size: 2vw;
+  line-height: 1.5;
+}
+
+.newchocosauce p{
+  font-size: 4.5vw;
+  color: #b0a1c7;
+  line-height: 1.7;
+  box-sizing: border-box;
+}
+
+.discover-fav h3{
+  font-size: 2vw;
+  line-height: 1.3;
+}
+
+.discover-fav span{
+  font-size: 4.8vw;
+}
+
+.discover-fav p{
+  font-size: 1vw;
+  line-height: 1.7;
+  padding-left: 2vw;
+  
+}
+
+@media screen and (min-width: 768px) {
+  .mocha-catchcopy h1{
+  color: #aa9ac3;
+  font-size: 1.6vw;
+  font-weight: bold;
+  line-height: 1.6;
+  box-sizing: border-box;
+  margin-bottom: 2vw;
+}
+
+.mocha-catchcopy p{
+  color: #6c6877;
+  font-size: 0.7vw;
+  line-height: 1.5;
+}
+
+.newchocosauce p{
+  font-size: 1vw;
+  color: #b0a1c7;
+  line-height: 1.7;
+}
+
+.discover-fav h3{
+  font-size: 1vw;
+  line-height: 1.3;
+}
+
+.discover-fav span{
+  font-size: 2vw;
+}
+
+.discover-fav p{
+  font-size: 1vw;
+  line-height: 1.7;
+  padding-left: 2vw;
+  
+}
+  
+  
+  
+}
+
+/* コンテンツ部分 */
+
+.mocha-catchcopy{
+  margin: 5vw 2vw;
+}
+
+.newchocosauce{
+  display: flex;
+  margin: 0 0 5vw 2vw;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.newchocosauce img{
+  width: 20vw;
+}
+
+.discover-fav{
+  width: 85vw;
+  display: flex;
+  border: 2px #9d9d9e solid;
+  margin: 5vw auto;
+  padding: 4vw 2vw;
+  position: relative;
+}
+
+
+.discover-fav img{
+  width: 16vw;
+  position: absolute;
+  bottom: 0vw;
+  right: 1vw;
+}
+
+@media screen and (min-width: 768px) {
+  .mocha-catchcopy{
+  margin: 0;
+}
+  
+  .choco-para{
+    width: 35vw;
+  }
+  
+  .newchocosauce{
+  display: flex;
+  margin: 0;
+  align-items: center;
+}
+
+.newchocosauce img{
+  width: 5vw;
+}
+  
+  .discover-fav{
+  width: 20vw;
+  display: block;
+  border: 2px #9d9d9e solid;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+
+.discover-fav img{
+  width: 5vw;
+  position: absolute;
+  bottom: 0vw;
+  right: 1vw;
+}
+  
+  
+  
+}
+
+
+
+/* ギフトコンテンツ */
+
+.gift-inner{
+  position: relative;
+  height: 235vw;
+}
+
+/* 他のメニュー部分 フォント関連 */
 
 .coffee-image a{
-  position: absolute;
-  right: 70px;
-  bottom: 100px;
-  font-size: 46px;
-  font-family: "小塚ゴシック Pr6N";
-  text-decoration: none;
-  font-weight: bold;
+  font-size: 28px;
   color: #43f5fc;
+  font-weight: 500;
 }
 
-.coffee-image a:hover{
-  color: #63a1a3;
+
+/* 他のメニュー部分 */
+.coffee-image{
+  position: relative;
+  height: 50vw;
 }
+
+.coffee-image img{
+  position: absolute;
+}
+
+.see-menu{
+  position: absolute;
+  top: 90vw;
+  right: 1vw;
+}
+
+/* コンテンツ部分 フォント関連 */
+.gift-catch h2{
+  font-size: 31px;
+  font-weight: bold;
+  color: #00b5b7;
+}
+
+.gift-catch p{
+  font-size: 18px;
+  line-height: 42px;
+  margin-bottom: 30px;
+  font-weight: bold;
+  color: #00b5b7;
+}
+
+.gift-catch a{
+  font-size: 18px;
+  font-weight: bold;
+  color: #00b5b7;
+}
+
+/* コンテンツ部分 */
 
 .gift-contents{
-  padding: 250px 0 0 250px;
-  font-family: "小塚ゴシック Pr6N";
-  color: #85838f;
+  position: absolute;
+  top: 87vw;
 }
 
-.gift-contents h2{
-  font-size: 30px;
-  font-weight: bold;
-
-}
-
-.gift-contents p{
-  font-size: 13px;
-  line-height: 34px;
-}
-
-.gift-contents a{
-  font-size: 13px;
-  line-height: 90px;
-  text-decoration: none;
-  color: #85838f;
-}
-
-.gift-contents a:hover{
-  color: #57555d;
-}
-
-.gift-image{
-  padding: 230px 0 0 50px;
+.gift-catch{
+  position: absolute;
+  top: 60vw;
+  margin-left: 2vw;
 }
 
 /* フッター */
-footer{
+
+.foot-navi{
   background-color: #f3f1ef;
-  margin-left: 140px;
-  position: relative;
-  z-index: 5;
-  height: 200px;
+  padding: 7%;
 }
 
+/* フッター フォント関連 */
 .navi{
-  padding: 30px;
+  font-size: 16px;
+  line-height: 25px;
   color: #958677;
 }
 
-.navi a{
+.trademark{
   color: #958677;
 }
 
-.navi a:hover{
-  color: #685d53;
-}
-
-.navi p{
-  padding-left: 20px;
-}
-
-.sns-info{
-  overflow: hidden;
-}
-
-.sns-info li{
-  float: left;
-  list-style-type: none;
-  padding: 0 20px;
-}
-
-.left-bd{
-  border-left: 1px #958677 solid;
-}
-
-.info{
-  overflow: hidden;
-}
-
-.info li{
-  float: left;
-  list-style-type: none;
-  padding: 0 20px;
-  margin: 20px 0;
+/* フッター 配置関連 */
+.nav-posi{
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2vw;
 }
 
 
@@ -412,4 +681,24 @@ footer{
 
 
 
-/*   ここまで    */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
