@@ -62,6 +62,16 @@ li{
   .choco-mocha{
   background: none;
 }
+  
+  .new-line{
+    display: block;
+    font-weight: 500;
+    
+  }
+  
+  .pc-newline{
+    display: none;
+  }
 }
 
 
@@ -254,15 +264,7 @@ li{
   
   /* フォント調整 */
   
-  .new-line{
-    display: block;
-    font-weight: 500;
-    
-  }
   
-  .pc-newline{
-    display: none;
-  }
   
   .bottom-adjustment{
     margin-bottom: 1vw;
@@ -598,6 +600,19 @@ li{
   height: 235vw;
 }
 
+@media screen and (min-width: 768px) {
+  .gift-inner{
+  position: static;
+  height: 44vw;
+  display: flex;
+}
+  
+  .bg-sec3{
+    background: url("https://github.com/noruneko4487/coffeeshop/blob/main/img/bg_sec3.png?raw=true") no-repeat;
+    background-size: cover;
+  }
+}
+
 /* 他のメニュー部分 フォント関連 */
 
 .coffee-image a{
@@ -606,21 +621,50 @@ li{
   font-weight: 500;
 }
 
+@media screen and (min-width: 768px) {
+  .coffee-image a{
+  font-size: 2vw;
+  color: #43f5fc;
+  font-weight: 500;
+}
+}
+
 
 /* 他のメニュー部分 */
 .coffee-image{
   position: relative;
   height: 50vw;
+  
 }
 
 .coffee-image img{
-  position: absolute;
+  position: static;
 }
 
 .see-menu{
   position: absolute;
   top: 90vw;
   right: 1vw;
+}
+
+@media screen and (min-width: 768px) {
+  .coffee-image{
+  position: relative;
+  height: 50vw;
+  top: 10vw;
+  left: 5vw;
+}
+
+.coffee-image img{
+  position: static;
+  width: 40vw;
+}
+
+.see-menu{
+  position: absolute;
+  top: 29vw;
+  right: 5vw;
+}
 }
 
 /* コンテンツ部分 フォント関連 */
@@ -644,6 +688,20 @@ li{
   color: #00b5b7;
 }
 
+@media screen and (min-width: 768px) {
+  .gift-catch h2{
+  color: #85838f;
+}
+
+.gift-catch p{
+  color: #85838f;
+}
+
+.gift-catch a{
+  color: #85838f;
+}
+}
+
 /* コンテンツ部分 */
 
 .gift-contents{
@@ -657,11 +715,41 @@ li{
   margin-left: 2vw;
 }
 
+@media screen and (min-width: 768px) {
+  .gift-contents{
+  position: static;
+  padding: 15vw 0 0 10vw;
+  display: flex;
+  align-items: flex-start;
+}
+  
+  .gift-contents img{
+  width: 20vw;
+  order: 2;
+}
+
+.gift-catch{
+  position: static;
+  margin-left: 0;
+  margin-right: 3vw;
+  order: 1;
+}
+}
+
 /* フッター */
 
 .foot-navi{
   background-color: #f3f1ef;
   padding: 7%;
+}
+
+@media screen and (min-width: 768px) {
+  .foot-navi{
+  padding: 0;
+  position: relative;
+  z-index: 2;
+  height: 10vw;
+}
 }
 
 /* フッター フォント関連 */
@@ -682,7 +770,23 @@ li{
   margin-bottom: 2vw;
 }
 
-
+@media screen and (min-width: 768px) {
+  .nav-posi{
+  display: block;
+  margin: 2vw 0 0 2vw;
+}
+  
+  .sns-navi, .info-navi{
+    display: flex;
+    justify-content: space-around;
+    width: 35vw;
+    
+  }
+  
+  {
+    
+  }
+}
 
 
 
