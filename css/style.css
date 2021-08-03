@@ -100,7 +100,7 @@ li{
 
 	.bg-sec1{
     background: url("https://github.com/noruneko4487/coffeeshop/blob/main/img/bg_sec1.png?raw=true") no-repeat;
-    background-size: contain;
+    background-size: cover;
     height: 64vw;
   
 }
@@ -109,6 +109,7 @@ li{
   
   .catchcopy-container{
     position: relative;
+    width: 50vw;
     top: 2vw;
     left: 27vw;
     
@@ -316,7 +317,7 @@ li{
   
   .bg-sec2{
     background: url("https://github.com/noruneko4487/coffeeshop/blob/main/img/bg_sec2.png?raw=true") no-repeat;
-    background-size: contain;
+    background-size: cover;
   }
 
 }
@@ -384,8 +385,8 @@ li{
 }
 .w-mocha{
   position: absolute;
-  bottom: 4vw;
-  right: 7vw;
+  bottom: 3vw;
+  right: 6vw;
 }
 }
 
