@@ -661,7 +661,7 @@ li{
 
 .see-menu{
   position: absolute;
-  top: 26vw;
+  top: 95vw;
   right: 5vw;
 }
 }
@@ -708,8 +708,8 @@ li{
 /* コンテンツ部分 */
 
 .gift-contents{
-  position: absolute;
-  top: 87vw;
+  position: relative;
+  top: 42vw;
 }
 
 .gift-catch{
@@ -765,6 +765,7 @@ li{
 
 .trademark{
   color: #958677;
+  font-size: 3vw;
 }
 
 @media screen and (min-width: 768px) {
