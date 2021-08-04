@@ -93,15 +93,15 @@ li{
 
 
 .catch-copy h1{
-  font-size: 19px;
+  font-size: 5vw;
   font-weight: bold;
   color: #aa9ac3;
 }
 
 .catch-copy p{
-  font-size: 10.7px;
+  font-size: 2.5vw;
   color: #201236;
-  line-height: 17px;
+  line-height: 1.8;
 }
 
 /* トップコンテンツ PC版 */
@@ -166,12 +166,12 @@ li{
 }
 
 .bc-deco{
-  font-size: 10px;
-  line-height: 21px;
+  font-size: 1vw;
+  line-height: 1.9;
 }
 
 .bottom-adjustment{
-  padding-bottom: 2px;
+  padding-bottom: 1vw;
 }
 
 .cocoa-frappuccino{
@@ -201,15 +201,15 @@ li{
 }
 
 .menu-contents h2{
-  font-size: 12px;
-  line-height: 16px;
+  font-size: 3vw;
+  line-height: 1.2;
 }
 
 
 
 .menu-contents p{
-  font-size: 10px;
-  line-height: 18px;
+  font-size: 1vw;
+  line-height: 1.5;
 }
 
 
@@ -616,7 +616,7 @@ li{
 /* 他のメニュー部分 フォント関連 */
 
 .coffee-image a{
-  font-size: 28px;
+  font-size: 6vw;
   color: #43f5fc;
   font-weight: 500;
 }
@@ -624,8 +624,8 @@ li{
 @media screen and (min-width: 768px) {
   .coffee-image a{
   font-size: 2vw;
-  color: #43f5fc;
-  font-weight: 500;
+  color: #0cf6ff;
+  font-weight: bold;
 }
 }
 
@@ -661,28 +661,28 @@ li{
 
 .see-menu{
   position: absolute;
-  top: 29vw;
+  top: 26vw;
   right: 5vw;
 }
 }
 
 /* コンテンツ部分 フォント関連 */
 .gift-catch h2{
-  font-size: 31px;
+  font-size: 7vw;
   font-weight: bold;
   color: #00b5b7;
 }
 
 .gift-catch p{
-  font-size: 18px;
-  line-height: 42px;
-  margin-bottom: 30px;
+  font-size: 4vw;
+  line-height: 2.4;
+  margin-bottom: 8vw;
   font-weight: bold;
   color: #00b5b7;
 }
 
 .gift-catch a{
-  font-size: 18px;
+  font-size: 4vw;
   font-weight: bold;
   color: #00b5b7;
 }
@@ -690,14 +690,18 @@ li{
 @media screen and (min-width: 768px) {
   .gift-catch h2{
   color: #85838f;
+  font-size: 2vw;
 }
 
 .gift-catch p{
   color: #85838f;
+  font-size: 1vw;
+  margin-bottom: 2vw;
 }
 
 .gift-catch a{
   color: #85838f;
+  font-size: 1vw;
 }
 }
 
@@ -744,22 +748,37 @@ li{
 
 @media screen and (min-width: 768px) {
   .foot-navi{
-  padding: 0;
+  padding: 1vw;
   position: relative;
   z-index: 2;
-  height: 7vw;
+  min-height: 8vw;
+  
 }
 }
 
 /* フッター フォント関連 */
 .navi{
-  font-size: 16px;
-  line-height: 25px;
+  font-size: 3.5vw;
+  line-height: 1.7;
   color: #958677;
 }
 
 .trademark{
   color: #958677;
+}
+
+@media screen and (min-width: 768px) {
+  .navi{
+  font-size: 1vw;
+  color: #958677;
+  line-height: 1;
+}
+
+.trademark{
+  color: #958677;
+  font-size: 1vw;
+  padding-left: 0.6vw;
+}
 }
 
 /* フッター 配置関連 */
@@ -772,14 +791,32 @@ li{
 @media screen and (min-width: 768px) {
   .nav-posi{
   display: block;
+  margin-bottom: 1.5vw;
 }
   
   .sns-navi, .info-navi{
     display: flex;
     justify-content: space-around;
-    width: 35vw;
-    
+    width: 50vw;
   }
+  
+  .sns-navi{
+    margin-bottom: 1.5vw;
+  }
+  
+  .info-navi{
+    padding-left: 0.3vw;
+  }
+  
+  .list-border li{
+    border-right: 1px #958677 solid;
+    padding-right: 1.7vw;
+  }
+  
+  #border-none{
+    border-right: none;
+  }
+  
 }
 
 
