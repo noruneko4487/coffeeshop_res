@@ -797,6 +797,10 @@ li{
   margin-bottom: 2vw;
 }
 
+.list-border a{
+  color: #958677;
+}
+
 @media screen and (min-width: 1000px) {
   .nav-posi{
   display: block;
@@ -822,9 +826,7 @@ li{
     padding-right: 1.7vw;
   }
 
-  .list-border a{
-    color: #958677;
-  }
+
 
   .list-border a:hover{
     color: #5f1919;
