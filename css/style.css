@@ -14,7 +14,7 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, address, c
 /* 全体css */
 body{
   font-family: "小塚ゴシック Pr6N", sans-serif;
-  
+
 }
 
 a{
@@ -47,32 +47,38 @@ li{
 .pc-image{
   display: none;
 }
-  
-  
-@media screen and (min-width: 768px) {
+
+
+@media screen and (min-width: 1000px) {
   .sp-image{
     display: none;
   }
-  
+
   .pc-image{
     display: inline;
-    
+
   }
-  
+
   .choco-mocha{
   background: none;
 }
-  
+
   .new-line{
     display: block;
     font-weight: 500;
-    
+
   }
-  
+
   .pc-newline{
     display: none;
   }
+
+  .container{
+    min-width: 1050px;
+  }
 }
+
+
 
 
 
@@ -106,30 +112,30 @@ li{
 
 /* トップコンテンツ PC版 */
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1000px) {
 
 	.bg-sec1{
     background: url("https://github.com/noruneko4487/coffeeshop/blob/main/img/bg_sec1.png?raw=true") no-repeat;
     background-size: cover;
     height: 64vw;
-  
+
 }
-  
-  
-  
+
+
+
   .catchcopy-container{
     position: relative;
     width: 50vw;
     top: 2vw;
     left: 27vw;
-    
+
   }
-  
+
   .catchcopy-container img{
     width: 40vw;
     margin: 0;
   }
-  
+
   .catch-copy{
     width: 23vw;
     text-align: right;
@@ -139,18 +145,18 @@ li{
     z-index: 2;
     min-width: 344px;
   }
-  
+
   .catch-copy h1{
     font-size: 1.3vw;
   }
-  
+
   .catch-copy p{
     font-size: 0.6vw;
     line-height: 27px;
-    
+
   }
-  
-  
+
+
 }
 
 /* トップコンテンツメニュー部分 */
@@ -166,8 +172,9 @@ li{
 }
 
 .bc-deco{
-  font-size: 3vw;
+  font-size: 1vw;
   line-height: 1.9;
+  font-weight: bold;
 }
 
 .bottom-adjustment{
@@ -183,21 +190,21 @@ li{
 .crumble-cocoa{
   position: absolute;
   top: 37%;
-  
+
 }
 
 
 .chocolatey-crumble{
   position: absolute;
   top: 60%;
-  
+
 }
 
 
 .chocolatey-frappuccino{
   position: absolute;
   top: 91%;
-  
+
 }
 
 .menu-contents h2{
@@ -219,104 +226,104 @@ li{
 
 /* トップコンテンツメニュー部分 PC版 */
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1000px) {
   .menu-container{
     height: 700px;
   }
-  
+
   .choco-drink{
     position: absolute;
     top: -1vw;
   }
-  
+
   .menu-contents{
     text-align: left;
     width: 20%;
     margin-left: 0;
   }
-  
-  
-  
+
+
+
   .cocoa-frappuccino{
     position: absolute;
     top: 26vw;
     left: 3vw;
   }
-  
+
   .crumble-cocoa{
     position: absolute;
     top: 32vw;
     left: 26vw;
   }
-  
+
   .chocolatey-crumble{
     position: absolute;
     top: 33vw;
     right: 25vw;
   }
-  
+
   .chocolatey-frappuccino{
     position: absolute;
     top: 30vw;
     right: 1vw;
     text-align: right;
   }
-  
+
   /* フォント調整 */
-  
-  
-  
+
+
+
   .bottom-adjustment{
     margin-bottom: 1vw;
   }
-  
+
   .menu-contents h2{
     font-size: 1.3vw;
     line-height: 1.2;
     font-weight: 500;
     margin-bottom: 1vw;
   }
-  
+
   .menu-contents p{
     font-size: 1vw;
     line-height: 1.6;
   }
-  
-  
-  
-  
+
+
+
+
 }
 
 /* モカココアコンテンツ　 */
 
-@media screen and (min-width: 768px) {
-  
-  
+@media screen and (min-width: 1000px) {
+
+
   .grid-mocha{
     display: grid;
     grid-template-rows: 19vw auto;
     grid-template-columns: 40vw auto;
-    grid-template-areas: 
+    grid-template-areas:
       "catchimage drinkimage"
       "mochacontent drinkimage";
-    
+
   }
-  
+
   .mocha-catchcopy{
     grid-area: catchimage;
   }
-  
+
   .mocha-menu{
     grid-area: drinkimage;
   }
-  
+
   .mocha-contents{
     grid-area: mochacontent;
   }
-  
 
-  
-  
+
+
+
   .bg-sec2{
     background: url("https://github.com/noruneko4487/coffeeshop/blob/main/img/bg_sec2.png?raw=true") no-repeat;
     background-size: cover;
@@ -331,17 +338,17 @@ li{
   margin: 3vw;
 }
 
-@media screen and (min-width: 768px) {
-  
-  
+@media screen and (min-width: 1000px) {
+
+
   .mocha-catchcopy img{
   width: 35vw;
   margin: 0;
   padding-left: 2vw;
 }
-  
-  
-  
+
+
+
 }
 
 
@@ -367,9 +374,9 @@ li{
   right: 7vw;
 }
 
-@media screen and (min-width: 768px) {
-  
-  
+@media screen and (min-width: 1000px) {
+
+
   .mocha-menu{
   position: relative;
   text-align: center;
@@ -408,8 +415,8 @@ li{
   font-size: 4.5vw;
 }
 
-@media screen and (min-width: 768px) {
-  
+@media screen and (min-width: 1000px) {
+
 
 .drink-contents h3{
   font-size: 2vw;
@@ -460,12 +467,12 @@ li{
   font-size: 3vw;
   line-height: 1.7;
   padding-left: 2vw;
-  
+
 }
 
-@media screen and (min-width: 768px) {
-  
-  
+@media screen and (min-width: 1000px) {
+
+
   .mocha-catchcopy h1{
   color: #aa9ac3;
   font-size: 1.4vw;
@@ -500,11 +507,11 @@ li{
   font-size: 0.8vw;
   line-height: 1.7;
   padding-left: 2vw;
-  
+
 }
-  
-  
-  
+
+
+
 }
 
 /* コンテンツ部分 */
@@ -543,20 +550,20 @@ li{
   right: 1vw;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1000px) {
   .mocha-contents{
     width: 40vw;
     margin-left: 2vw;
   }
-  
+
   .mocha-catchcopy{
   margin-bottom: 2vw;
 }
-  
+
   .choco-para{
     width: 35vw;
   }
-  
+
   .newchocosauce{
   display: flex;
   margin-bottom: 2vw;
@@ -568,7 +575,7 @@ li{
 .newchocosauce img{
   width: 5vw;
 }
-  
+
   .discover-fav{
   width: 27vw;
   display: flex;
@@ -586,9 +593,9 @@ li{
   bottom: 0vw;
   right: 0.5vw;
 }
-  
-  
-  
+
+
+
 }
 
 
@@ -600,13 +607,13 @@ li{
   height: 235vw;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1000px) {
   .gift-inner{
   position: static;
   height: 42vw;
   display: flex;
 }
-  
+
   .bg-sec3{
     background: url("https://github.com/noruneko4487/coffeeshop/blob/main/img/bg_sec3.png?raw=true") no-repeat;
     background-size: cover;
@@ -621,7 +628,7 @@ li{
   font-weight: 500;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1000px) {
   .coffee-image a{
   font-size: 2vw;
   color: #0cf6ff;
@@ -634,7 +641,7 @@ li{
 .coffee-image{
   position: relative;
   height: 50vw;
-  
+
 }
 
 .coffee-image img{
@@ -647,23 +654,21 @@ li{
   right: 1vw;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1000px) {
   .coffee-image{
-  height: 0;
-  top: 10vw;
-  left: 5vw;
+    width: 40%;
+    left: 5%;
+    top: 15%;
 }
 
-.coffee-image img{
-  position: static;
-  width: 40vw;
-}
+  .see-menu{
+    top: 60%;
+  }
 
-.see-menu{
-  position: absolute;
-  top: 95vw;
-  right: 5vw;
-}
+  .coffee-image a:hover{
+    color: #5f1919;
+  }
+
 }
 
 /* コンテンツ部分 フォント関連 */
@@ -687,7 +692,7 @@ li{
   color: #00b5b7;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1000px) {
   .gift-catch h2{
   color: #85838f;
   font-size: 2vw;
@@ -702,6 +707,10 @@ li{
 .gift-catch a{
   color: #85838f;
   font-size: 1vw;
+}
+
+.gift-catch a:hover{
+  color: #5f1919;
 }
 }
 
@@ -718,14 +727,14 @@ li{
   margin-left: 2vw;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1000px) {
   .gift-contents{
   position: static;
   padding: 15vw 0 0 10vw;
   display: flex;
   align-items: flex-start;
 }
-  
+
   .gift-contents img{
   width: 20vw;
   order: 2;
@@ -746,14 +755,13 @@ li{
   padding: 7%;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1000px) {
   .foot-navi{
-  padding: 1vw;
   position: relative;
-  z-index: 2;
-  min-height: 8vw;
-  
+  padding: 2%;
+  height: 200px;
 }
+
 }
 
 /* フッター フォント関連 */
@@ -769,17 +777,16 @@ li{
   margin-left: 4vw;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1000px) {
   .navi{
   font-size: 1vw;
-  color: #958677;
   line-height: 1;
 }
 
 .trademark{
   color: #958677;
   font-size: 1vw;
-  padding-left: 0.6vw;
+
 }
 }
 
@@ -790,66 +797,41 @@ li{
   margin-bottom: 2vw;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1000px) {
   .nav-posi{
   display: block;
   margin-bottom: 1.5vw;
 }
-  
+
   .sns-navi, .info-navi{
     display: flex;
     justify-content: space-around;
     width: 50vw;
   }
-  
+
   .sns-navi{
     margin-bottom: 1.5vw;
   }
-  
+
   .info-navi{
     padding-left: 0.3vw;
   }
-  
+
   .list-border li{
     border-right: 1px #958677 solid;
     padding-right: 1.7vw;
   }
-  
+
+  .list-border a{
+    color: #958677;
+  }
+
+  .list-border a:hover{
+    color: #5f1919;
+  }
+
   #border-none{
     border-right: none;
   }
-  
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
